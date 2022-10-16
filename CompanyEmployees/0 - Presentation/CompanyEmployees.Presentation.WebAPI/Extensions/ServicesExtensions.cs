@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using CompanyEmployees.Domain.Interfaces.Logger;
+using CompanyEmployees.Service.Logger;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CompanyEmployees.Presentation.WebAPI.Extensions
@@ -16,6 +18,9 @@ namespace CompanyEmployees.Presentation.WebAPI.Extensions
 
         public static void ConfigureIISIntegration(this IServiceCollection services) => 
             services.Configure<IISOptions>(options => { });
+
+        public static void ConfigureLoggerService(this IServiceCollection services) => 
+            services.AddSingleton<ILoggerManager, LoggerManager>();
 
     }
 }
