@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CompanyEmployees.Domain.Entities
 {
-    public class Employee
+    public class Employee 
     {
         [Column("Id")]
         public Guid Id { get; set; }
