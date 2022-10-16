@@ -1,4 +1,4 @@
-﻿using CompanyEmployees.Domain.Interfaces.Logger;
+﻿using CompanyEmployees.Domain.Interfaces;
 using CompanyEmployees.Service.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;

@@ -1,4 +1,4 @@
-﻿namespace CompanyEmployees.Domain.Interfaces.Logger
+﻿namespace CompanyEmployees.Domain.Interfaces
 {
     public interface ILoggerManager
     {

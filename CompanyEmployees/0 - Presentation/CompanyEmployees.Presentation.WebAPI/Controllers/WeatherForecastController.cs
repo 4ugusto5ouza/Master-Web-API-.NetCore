@@ -1,4 +1,4 @@
-using CompanyEmployees.Domain.Interfaces.Logger;
+using CompanyEmployees.Domain.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

@@ -1,4 +1,4 @@
-﻿using CompanyEmployees.Domain.Interfaces.Logger;
+﻿using CompanyEmployees.Domain.Interfaces;
 using NLog;
 
 namespace CompanyEmployees.Service.Logger
