@@ -16,7 +16,7 @@ namespace CompanyEmployees.Presentation.WebAPI.ContextFactory
                 .Build();
 
             var builder = new DbContextOptionsBuilder<CompanyEmployeesDbContext>()
-                .UseSqlServer(configuration.GetConnectionString("sqlConnection")); 
+                .UseSqlServer(configuration.GetConnectionString("sqlConnection"), b => b.MigrationsAssembly("CompanyEmployees.Infrastructure")); 
             return new CompanyEmployeesDbContext(builder.Options);
         }
     }
