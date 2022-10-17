@@ -4,8 +4,8 @@ namespace CompanyEmployees.Domain.Interfaces
 {
     public interface IRepositoryManager
     {
-        ICompanyRepository companyRepository { get; }
-        IEmployeeRepository employeeRepository { get; }
+        ICompanyRepository CompanyRepository { get; }
+        IEmployeeRepository EmployeeRepository { get; }
 
         void Save();
     }

@@ -17,8 +17,8 @@ namespace CompanyEmployees.Infrastructure.Repositories.RepositoryManager
             _employeeRepository = new Lazy<IEmployeeRepository>(() => new EmployeeRepository(companyEmployeesContext));
         }
 
-        public ICompanyRepository companyRepository => _companyRepository.Value;
-        public IEmployeeRepository employeeRepository => _employeeRepository.Value;
+        public ICompanyRepository CompanyRepository => _companyRepository.Value;
+        public IEmployeeRepository EmployeeRepository => _employeeRepository.Value;
 
         public void Save()
         {
