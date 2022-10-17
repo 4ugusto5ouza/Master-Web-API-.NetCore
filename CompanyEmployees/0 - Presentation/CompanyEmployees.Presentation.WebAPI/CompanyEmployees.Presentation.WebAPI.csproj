@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\1 - Application\CompanyEmployees.Application\CompanyEmployees.Application.csproj" />
     <ProjectReference Include="..\..\2 - Service\CompanyEmployees.Service\CompanyEmployees.Service.csproj" />
     <ProjectReference Include="..\..\4 - Infrastructure\CompanyEmployees.Infrastructure\CompanyEmployees.Infrastructure.csproj" />
   </ItemGroup>

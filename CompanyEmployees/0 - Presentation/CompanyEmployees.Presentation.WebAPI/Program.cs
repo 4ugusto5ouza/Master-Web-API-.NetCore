@@ -17,7 +17,8 @@ builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddApplicationPart(typeof(CompanyEmployees.Application.AssemblyReference).Assembly);
 
 builder.Services.ConfigureSQLContext(builder.Configuration);
 
