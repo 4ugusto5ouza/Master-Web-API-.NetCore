@@ -19,6 +19,8 @@ builder.Services.ConfigureServiceManager();
 
 builder.Services.AddControllers();
 
+builder.Services.ConfigureSQLContext(builder.Configuration);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
