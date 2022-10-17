@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CompanyEmployees.Infrastructure.Migrations
 {
-    [DbContext(typeof(CompanyEmployeesDbContext))]
+    [DbContext(typeof(CompanyEmployeesContext))]
     [Migration("20221016153815_InitialData")]
     partial class InitialData
     {

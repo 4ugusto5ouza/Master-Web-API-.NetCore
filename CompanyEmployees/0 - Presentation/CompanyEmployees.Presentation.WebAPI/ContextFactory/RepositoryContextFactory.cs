@@ -6,18 +6,18 @@ using System.IO;
 
 namespace CompanyEmployees.Presentation.WebAPI.ContextFactory
 {
-    public class RepositoryContextFactory : IDesignTimeDbContextFactory<CompanyEmployeesDbContext>
+    public class RepositoryContextFactory : IDesignTimeDbContextFactory<CompanyEmployeesContext>
     {
-        public CompanyEmployeesDbContext CreateDbContext(string[] args)
+        public CompanyEmployeesContext CreateDbContext(string[] args)
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            var builder = new DbContextOptionsBuilder<CompanyEmployeesDbContext>()
+            var builder = new DbContextOptionsBuilder<CompanyEmployeesContext>()
                 .UseSqlServer(configuration.GetConnectionString("sqlConnection"), b => b.MigrationsAssembly("CompanyEmployees.Infrastructure")); 
-            return new CompanyEmployeesDbContext(builder.Options);
+            return new CompanyEmployeesContext(builder.Options);
         }
     }
 }

@@ -7,8 +7,8 @@ namespace CompanyEmployees.Infrastructure.Repositories
 {
     public class CompanyRepository : RepositoryBase<Company>, ICompanyRepository
     {
-        public CompanyRepository(CompanyEmployeesDbContext companyEmployeesDbContext)
-            : base(companyEmployeesDbContext)
+        public CompanyRepository(CompanyEmployeesContext companyEmployeesContext)
+            : base(companyEmployeesContext)
         { 
         }
     }

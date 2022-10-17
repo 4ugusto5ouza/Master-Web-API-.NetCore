@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CompanyEmployees.Infrastructure.Context
 {
-    public class CompanyEmployeesDbContext : DbContext
+    public class CompanyEmployeesContext : DbContext
     {
-        public CompanyEmployeesDbContext(DbContextOptions options)
+        public CompanyEmployeesContext(DbContextOptions options)
             : base(options)
         {
         }

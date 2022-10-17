@@ -1,4 +1,5 @@
 ﻿using CompanyEmployees.Domain.Interfaces;
+using CompanyEmployees.Infrastructure.Repositories.RepositoryManager;
 using CompanyEmployees.Service.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +22,11 @@ namespace CompanyEmployees.Presentation.WebAPI.Extensions
 
         public static void ConfigureLoggerService(this IServiceCollection services) => 
             services.AddSingleton<ILoggerManager, LoggerManager>();
+
+        public static void ConfigureRepositoryManager(this IServiceCollection services) => 
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+
+
 
     }
 }

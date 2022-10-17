@@ -5,10 +5,10 @@ using CompanyEmployees.Infrastructure.RepositoryBase;
 
 namespace CompanyEmployees.Infrastructure.Repositories
 {
-    public class EmployeeRepository : RepositoryBase<Company>, ICompanyRepository
+    public class EmployeeRepository : RepositoryBase<Company>, IEmployeeRepository
     {
-        public EmployeeRepository(CompanyEmployeesDbContext companyEmployeesDbContext)
-            : base(companyEmployeesDbContext)
+        public EmployeeRepository(CompanyEmployeesContext companyEmployeesContext)
+            : base(companyEmployeesContext)
         {
         }
     }
