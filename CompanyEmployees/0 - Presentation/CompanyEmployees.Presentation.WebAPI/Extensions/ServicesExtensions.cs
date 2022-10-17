@@ -1,6 +1,8 @@
 ﻿using CompanyEmployees.Domain.Interfaces;
 using CompanyEmployees.Infrastructure.Repositories.RepositoryManager;
+using CompanyEmployees.Service.Interfaces;
 using CompanyEmployees.Service.Logger;
+using CompanyEmployees.Service.Services.ServiceManager;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -25,6 +27,9 @@ namespace CompanyEmployees.Presentation.WebAPI.Extensions
 
         public static void ConfigureRepositoryManager(this IServiceCollection services) => 
             services.AddScoped<IRepositoryManager, RepositoryManager>();
+
+        public static void ConfigureServiceManager(this IServiceCollection services) => 
+            services.AddScoped<IServiceManager, ServiceManager>();
 
 
 

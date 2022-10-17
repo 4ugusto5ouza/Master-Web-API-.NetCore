@@ -18,7 +18,6 @@ namespace CompanyEmployees.Infrastructure.Repositories.RepositoryManager
         }
 
         public ICompanyRepository companyRepository => _companyRepository.Value;
-
         public IEmployeeRepository employeeRepository => _employeeRepository.Value;
 
         public void Save()
